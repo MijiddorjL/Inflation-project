@@ -1,0 +1,91 @@
+/* BASIC LAYOUT */
+
+
+body {
+  background-image: url('https://news.stanford.edu/wp-content/uploads/2022/09/GettyImages-1400001514.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+html {
+  font-size: 18px; 
+  font-family: sans-serif;
+  color: black;
+  background-color: #f3eadd; 
+  color: black;
+}
+
+.button {
+      background-color: #780000;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+
+
+h1 {
+  color: #ffffff;
+  font-size: 35px; 
+  text-align: center;
+  font-family: "Lato"; 
+  margin: 30px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h2 {
+  color: #609f9f;
+  font-size: 20px;
+  text-align: center; 
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h3 {
+  color: #609f9f;
+  font-size: 20px;
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px;
+
+}
+
+/* NAVIGATION BAR  */
+
+div.scrollmenu {
+    position: fixed;
+    top: 0%; 
+    left: 0; 
+    width: 100em; 
+    background-color: #780000;
+    overflow: auto;
+    font-family: sans-serif; 
+    font-size: 24px; 
+    white-space: nowrap;
+    opacity: .9;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+
+

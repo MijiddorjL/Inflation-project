@@ -1,0 +1,87 @@
+/* BASIC LAYOUT */
+
+
+body {
+  background:linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("https://assets.weforum.org/project/image/large_ZbcsNtoVp8NrArZWGTMk-cRIc5aGt9GPaTFyWeT5_IM.jpeg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: 100% 0%;
+
+}
+
+html {
+  font-size: 18px; 
+  font-family: sans-serif;
+  color: black;
+  background-color: white; 
+  color: black;
+}
+
+body {
+  width: 1000px;
+  margin: 50px auto;
+  background-color: white; 
+  padding: 0 50px 50px 20px;
+}
+
+h1 {
+  color: black;
+  font-size: 35px; 
+  text-align: center;
+  font-family: "Lato"; 
+  margin: 30px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h2 {
+  color: black;
+  font-size: 20px;
+  text-align: center; 
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px; 
+}
+
+h3 {
+  color: black;
+  font-size: 20px;
+  font-family: "Lato";
+  margin: 10px 0px 0px 0px; 
+  padding: 0px 0px 0px 0px;
+
+}
+  img {
+    display: block;
+    margin: auto;
+  }
+  iframe {
+    display: block;
+    margin: auto;
+  }
+
+/* NAVIGATION BAR  */
+
+div.scrollmenu {
+    position: fixed;
+    top: 0%; 
+    left: 0; 
+    width: 100em; 
+    background-color: #780000;
+    overflow: auto;
+    font-family: sans-serif; 
+    font-size: 24px; 
+    white-space: nowrap;
+    opacity: .9;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+div.scrollmenu a:hover {
+    background-color: #777;
+}
