@@ -50,11 +50,16 @@ h3 {
   padding: 0px 0px 0px 0px;
 
 }
-  img {
+  #map {
     display: block;
     margin: auto;
     width: 100%;
     height: auto;
+  }
+
+    img {
+    display: block;
+    margin: auto;
   }
   iframe {
     display: block;
@@ -87,3 +92,17 @@ div.scrollmenu a {
 div.scrollmenu a:hover {
     background-color: #777;
 }
+
+.button {
+      background-color: #780000;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        float: right;
+      }
