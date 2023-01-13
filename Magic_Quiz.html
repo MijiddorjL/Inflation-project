@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="styles.css" rel="stylesheet" />
+  <title>Inflation</title>
+</head>
+<body>
+        <div class="scrollmenu">
+            <a href="index.html">Home</a>
+            <a href="tab1.html">What is Inflation</a>
+            <a href="tab2.html">Main types of Inflation</a>
+            <a href="tab3.html">Current Trend</a>
+            <a href="tab-4.html">Case Studies</a>
+            <a href="glossary.html">Glossary</a>
+            <a href="Quiz.html">Quiz</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+
+        <br></br>
+<body>
+  <title>Quiz Yourself on Inflation</title>
+
+  <h1>Quiz Yourself on Inflation</h1>
+
+  <button onclick="getInflationSaying()">New Quiz Question</button>
+  <p id="inflationSaying"></p>
+
+  <script>
+    function getInflationSaying() {
+      var sayings = [
+        "What are the four kinds of inflationary phenomena?",
+        "What is in the consumer basket?",
+        "What are 5 causes of inflation?",
+        "What is an example of hyperinflation?",
+        "What can a country do to try to control inflation?"
+        "Inflation happens eventually. It is decidedly so."
+      ];
+      var randomIndex = Math.floor(Math.random() * sayings.length);
+      document.getElementById("inflationSaying").innerHTML = sayings[randomIndex];
+
+    }
+  </script>
+
+
+
+          <br>
+           <br>
+          <br>
+          <br>
+           <br>
+          <br>
+            <button>
+            <a class="button" href="tab1.html">
+         Previous page
+         </a>
+         </button>
+
+            <button>
+            <a class="button" href="tab3.html">
+         Next page
+         </a>
+         </button>
+    
+
+
+
+</body>
+
+
+</html>
