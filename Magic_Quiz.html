@@ -20,11 +20,15 @@
 
         <br></br>
 <body>
-  <title>Quiz Yourself on Inflation</title>
+  <title>Test Your Knowledge of Inflation</title>
 
   <h1>Quiz Yourself on Inflation</h1>
+  <br></br>
+  <img src="pictures/magic8-ball2.png" alt="Magic8_Ball" width="300" height="300">
 
-  <button onclick="getInflationSaying()">New Quiz Question</button>
+  <div class="text-center">
+    <button onclick="getInflationSaying()">New Quiz Question</button>
+    </div>
   <p id="inflationSaying"></p>
 
   <script>
@@ -33,9 +37,15 @@
         "What are the four kinds of inflationary phenomena?",
         "What is in the consumer basket?",
         "What are 5 causes of inflation?",
+        "What happens during cost-push inflation?",
+        "What is expectations of the future inflation?",
+        "The power for governments to print money is called what?",
+        "Name some goods and services that make up the consumer price index",
         "What is an example of hyperinflation?",
-        "What can a country do to try to control inflation?"
-        "Inflation happens eventually. It is decidedly so."
+        "What is an example of deinflation?",
+        "What is an example of stagflation?",
+        "What can a country do to try to control inflation?",
+        "What is the impact of inflation on consumers?"
       ];
       var randomIndex = Math.floor(Math.random() * sayings.length);
       document.getElementById("inflationSaying").innerHTML = sayings[randomIndex];
