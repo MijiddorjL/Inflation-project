@@ -22,10 +22,11 @@ body {
   margin: 50px auto;
   background-color: white; 
   padding: 0 50px 50px 20px;
+  text-align: justify;
 }
 
 h1 {
-  color: black;
+  color: #780000;;
   font-size: 35px; 
   text-align: center;
   font-family: "Lato"; 
@@ -34,7 +35,7 @@ h1 {
 }
 
 h2 {
-  color: black;
+  color: #780000;
   font-size: 20px;
   text-align: center; 
   font-family: "Lato";
@@ -43,7 +44,7 @@ h2 {
 }
 
 h3 {
-  color: black;
+  color: #780000;
   font-size: 20px;
   font-family: "Lato";
   margin: 10px 0px 0px 0px; 
@@ -105,4 +106,27 @@ div.scrollmenu a:hover {
         margin: 4px 2px;
         cursor: pointer;
         float: right;
+        display: flex;
+        justify-content: space-between;
+      }
+      
+      .member-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+      }
+
+      /* Member styles */
+      .member {
+        border: none;
+        padding: 10px;
+        text-align: center;
+      }
+
+      /* Image styles */
+      .member img {
+        width: 100%;
+        max-width: 200px;
+        border-radius: 50%;
       }
