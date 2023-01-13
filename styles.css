@@ -25,21 +25,19 @@ body {
 }
 
 h1 {
-  color: black;
+  color: firebrick;
   font-size: 35px; 
   text-align: center;
-  font-family: "Lato"; 
   margin: 30px 0px 0px 0px; 
-  padding: 0px 0px 0px 0px; 
+  padding: 0px 10px 10px 40px; 
 }
 
 h2 {
   color: black;
   font-size: 20px;
-  text-align: center; 
-  font-family: "Lato";
+  text-align: left; 
   margin: 10px 0px 0px 0px; 
-  padding: 0px 0px 0px 0px; 
+  padding: 0px 0px 10px 0px; 
 }
 
 h3 {
@@ -60,6 +58,7 @@ h3 {
     img {
     display: block;
     margin: auto;
+    padding-block: 30px;
   }
   iframe {
     display: block;
@@ -106,3 +105,12 @@ div.scrollmenu a:hover {
         cursor: pointer;
         float: right;
       }
+
+.quote {
+  color: black;
+}
+
+
+#mainquote {
+  border: 5px solid black;
+}
