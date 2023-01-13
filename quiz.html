@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+
+    <style>
+      /* Animation styles */
+      @keyframes celebrate {
+        0% {transform: scale(0);}
+        100% {transform: scale(1);}
+      }
+      #fanfare {
+        animation: celebrate 1s ease-out;
+        display: none; /* hide the element by default */
+      }
+    </style>
+    <link href="styles.css" rel="stylesheet" />
+    <script>
+      function checkAnswers() {
+        var totalCorrect = 0;
+        var totalQuestions = 5;
+        var q1 = document.forms["quizForm"]["question1"].value;
+        if (q1 == "Paris") {
+          totalCorrect++;
+        }
+
+        var q2 = document.forms["quizForm"]["question2"].value;
+        if (q2 == "Jupiter") {
+          totalCorrect++;
+        }
+
+        var q3 = document.forms["quizForm"]["question3"].value;
+        if (q3 == "New York") {
+          totalCorrect++;
+        }
+
+        var q4 = document.forms["quizForm"]["question4"].value;
+        if (q4 == "China") {
+          totalCorrect++;
+        }
+
+        var q5 = document.forms["quizForm"]["question5"].value;
+        if (q5 == "Python") {
+          totalCorrect++;
+        }
+
+        var percent = (totalCorrect / totalQuestions) * 100;
+        document.getElementById("results").innerHTML = "You got " + percent + "% correct!";
+        if (percent >= 80) {
+          document.getElementById("results").innerHTML += "<br>Congratulations, you passed!";
+          document.getElementById("fanfare").style.display = "block";
+        } else {
+          document.getElementById("results").innerHTML += "<br>Please review the material and try again!";
+        }
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <body>
+        <div class="scrollmenu">
+            <a href="index.html">Home</a>
+            <a href="tab1.html">What is Inflation</a>
+            <a href="tab2.html">Main types of Inflation</a>
+            <a href="tab-4.html">Case Studies</a>
+            <a href="tab3.html">Current trend</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+        <br></br>
+    <form name="quizForm" onsubmit="return checkAnswers()">
+      <h2>Quiz</h2>
+      <div>
+        <label>What is the capital of France?</label><br>
+        <input type="radio" name="question1" value="Paris">Paris<br>
+        <input type="radio" name="question1" value="London">London<br>
+        <input type="radio" name="question1" value="Rome">Rome<br>
+      </div>
+      <br></br>
+      <div>
+        <label>What is the largest planet in our solar system?</label><br>
+        <input type="radio" name="question2" value="Jupiter">Jupiter<br>
+        <input type="radio" name="question2" value="Saturn">Saturn<br>
+        <input type="radio" name="question2" value="Uranus">Uranus<br>
+      </div>
+      <br></br>
+      <div>
+        <label>What is the capital of USA?</label><br>
+        <input type="radio" name="question3" value="New York">New York<br>
+        <input type="radio" name="question3" value="Los Angeles">Los Angeles<br>
+        <input type="radio" name="question3" value="Washington D.C.">Washington D.C.<br>
+      </div>
+      <br></br>
+      <div>
+        <label>What is the most populous country in the world?</label><br>
+        <input type="radio" name="question4" value="China">China<br>
+        <input type="radio" name="question4" value="India">India<br>
+        <input type="radio" name="question4" value="United States">United States<br>
+      </div> 
+      <br></br>
+      <div>
+        <label>What is the most popular programming language in the world?</label><br>
+        <input type="radio" name="question5" value="Python">Python<br>
+        <input type="radio" name="question5" value="Java">Java<br>
+        <input type="radio" name="question5" value="C++">C++<br>
+      </div>
+<br></br>
+      <input type="submit" value="Submit Quiz">
+    </form>
+
+    <div id="results"></div>
+    <div id="fanfare">
+      <div class="tenor-gif-embed" data-postid="14763806" data-share-method="host" data-aspect-ratio="2.06452" data-width="100%"><a href="https://tenor.com/view/celebration-yay-party-time-lets-celebrate-that-gif-14763806">Celebration Yay GIF</a>from <a href="https://tenor.com/search/celebration-gifs">Celebration GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+
+<br></br>
+          <button>
+            <a class="button" href="tab3.html">
+         Let's explore Current Inflation trend
+         </a>
+         </button>
+  </body>
+</html>
