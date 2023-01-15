@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+
+    <style>
+      /* Animation styles */
+      @keyframes celebrate {
+        0% {transform: scale(0);}
+        100% {transform: scale(1);}
+      }
+      #fanfare {
+        animation: celebrate 1s ease-out;
+        display: none; /* hide the element by default */
+      }
+    </style>
+    <link href="styles.css" rel="stylesheet" />
+    <script>
+      function checkAnswers() {
+        var totalCorrect = 0;
+        var totalQuestions = 5;
+        var q1 = document.forms["quizForm"]["question1"].value;
+        if (q1 == "50") {
+          totalCorrect++;
+        }
+
+        var q2 = document.forms["quizForm"]["question2"].value;
+        if (q2 == "Stagnant GDP growth and high inflation") {
+          totalCorrect++;
+        }
+
+        var q3 = document.forms["quizForm"]["question3"].value;
+        if (q3 == "An increase in the general price level caused by an increase in the cost of production") {
+          totalCorrect++;
+        }
+
+        var q4 = document.forms["quizForm"]["question4"].value;
+        if (q4 == "A measure of the average change in the prices of a basket of goods and services consumed by households") {
+          totalCorrect++;
+        }
+
+        var q5 = document.forms["quizForm"]["question5"].value;
+        if (q5 == "An increase in the general price level caused by an increase in demand") {
+          totalCorrect++;
+        }
+
+        var percent = (totalCorrect / totalQuestions) * 100;
+        document.getElementById("results").innerHTML = "You got " + percent + "% correct!";
+        if (percent >= 80) {
+          document.getElementById("results").innerHTML += "<br>Congratulations, you passed!";
+          document.getElementById("fanfare").style.display = "block";
+        } else {
+          document.getElementById("results").innerHTML += "<br>Please review the material and try again!";
+        }
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <body>
+        <div class="scrollmenu">
+            <a href="index.html">Home</a>
+            <a href="tab1.html">Inflation</a>
+            <a href="tab2.html">Types of Inflation</a>
+            <a href="tab-4.html">Case Studies</a>
+            <a href="Magic_Quiz.html">Test Yourself</a>
+            <a href="tab3.html">Current Trend</a>
+            <a href="Glossary.html">Glossary</a>
+            <a href="aboutus.html">About Us</a>
+        </div>
+
+        <br></br>
+    <form name="quizForm" onsubmit="return checkAnswers()">
+      <h2>Quiz</h2>
+      <div>
+        <label>What is the threshold (monthly inflation percentage) for hyperinflation?</label><br>
+        <input type="radio" name="question1" value="50">50<br>
+        <input type="radio" name="question1" value="10">10<br>
+        <input type="radio" name="question1" value="20">20<br>
+      </div>
+      <br></br>
+      <div>
+        <label>What are the main indicators of stagflation?</label><br>
+        <input type="radio" name="question2" value="High GDP growth and low inflation">High GDP growth and low inflation<br>
+        <input type="radio" name="question2" value="Stagnant GDP growth and high inflation">Stagnant GDP growth and high inflation<br>
+        <input type="radio" name="question2" value="Stagnant GDP growth and low inflation
+         ">Stagnant GDP growth and low inflation<br>
+      </div>
+      <br></br>
+      <div>
+        <label>What is cost-push inflation?</label><br>
+        <input type="radio" name="question3" value="An increase in the general price level caused by an increase in demand">An increase in the general price level caused by an increase in demand<br>
+        <input type="radio" name="question3" value="An increase in the general price level caused by an increase in the cost of production">An increase in the general price level caused by an increase in the cost of production<br>
+        <input type="radio" name="question3" value="A decrease in the general price level caused by a decrease in demand">A decrease in the general price level caused by a decrease in demand<br>
+      </div>
+      <br></br>
+      <div>
+        <label>What is the Consumer Price Index (CPI)?</label><br>
+        <input type="radio" name="question4" value="A measure of the average change in the prices of a basket of goods and services consumed by households">A measure of the average change in the prices of a basket of goods and services consumed by households<br>
+        <input type="radio" name="question4" value="A measure of the average change in the prices of a basket of goods and services consumed by businesses">A measure of the average change in the prices of a basket of goods and services consumed by businesses<br>
+        <input type="radio" name="question4" value="A measure of the average change in the prices of a basket of goods and services consumed by the government">A measure of the average change in the prices of a basket of goods and services consumed by the government<br>
+      </div> 
+      <br></br>
+      <div>
+        <label>What is demand-pull inflation?</label><br>
+        <input type="radio" name="question5" value="An increase in the general price level caused by an increase in demand">An increase in the general price level caused by an increase in demand<br>
+        <input type="radio" name="question5" value="An increase in the general price level caused by an increase in the cost of production">An increase in the general price level caused by an increase in the cost of production<br>
+        <input type="radio" name="question5" value="A decrease in the general price level caused by a decrease in demand">A decrease in the general price level caused by a decrease in demand<br>
+      </div>
+<br></br>
+      <input type="submit" value="SUBMIT QUIZ">
+    </form>
+
+    <div id="results"></div>
+    <div id="fanfare">
+      <div class="tenor-gif-embed" data-postid="14763806" data-share-method="host" data-aspect-ratio="2.06452" data-width="100%"><a href="https://tenor.com/view/celebration-yay-party-time-lets-celebrate-that-gif-14763806">Celebration Yay GIF</a>from <a href="https://tenor.com/search/celebration-gifs">Celebration GIFs</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    </div>
+
+<br></br>
+          <button>
+            <a class="button" href="tab3.html">
+         Let's explore Current Inflation trend
+         </a>
+         </button>
+  </body>
+</html>
